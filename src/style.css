@@ -1,0 +1,90 @@
+/*Allmänna regler */
+* {
+    margin: 0 auto;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 1.5s ease-in-out;
+}
+
+img:hover {
+    animation: spin 1.5s ease-in-out;
+
+}
+
+.logocontainer {
+    background-color: rgb(255, 255, 255);
+}
+
+.navmeny {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin: 1.5%;
+    text-decoration: none;
+}
+
+.navmeny a:hover {
+    color: rgb(12, 129, 45);
+}
+
+.active {
+    color: rgb(12, 129, 45);
+    text-decoration: overline;
+}
+
+header {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.uppgdesc {
+
+    margin: 2%;
+    background-color: rgba(238, 238, 238, 0.369);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.uppg-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1250px;
+}
+
+.h2 {
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.p {
+    padding-top: 10px;
+    max-width: 800px;
+    text-align: left;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
